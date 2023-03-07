@@ -3,8 +3,11 @@ package personnages;
 public class Village { 
 	private String nom; 
 	private Chef chef; 
-	public Village(String nom) { 
+	private int nbVillageois = 0;
+	private Gaulois[] villageois; 
+ 	public Village(String nom, int nbMaxVillageois) { 
 		this.nom = nom; 
+		villageois = new Gaulois[nbMaxVillageois];
 	} 
 	public void setChef(Chef chef) { 
 		this.chef = chef; 
@@ -12,5 +15,11 @@ public class Village {
 	public String getNom() { 
 		return nom; 
 	}
-	
+	public void ajouterHabitant (Gaulois gaulois) {
+		villageois[nbVillageois] = gaulois;
+		nbVillageois ++;
+	}
+	public Gaulois trouverHabitant(int number) {
+		return villageois[number];
+	}
 } 

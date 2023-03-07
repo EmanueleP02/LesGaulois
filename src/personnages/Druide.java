@@ -25,7 +25,7 @@ public class Druide {
 	}
 	public static void main(String[] args) {
 		Druide panoramix = new Druide ("Panoramix", 5, 10) ;
-		System.out.println(asterix.nom);
-		System.out.println(asterix);
+		System.out.println(panoramix.nom);
+		System.out.println(panoramix.prendreParole());
 	}
 }
