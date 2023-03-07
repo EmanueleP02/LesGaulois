@@ -24,4 +24,13 @@ public class Romain {
 			parler("J'abandonne...");
 		}
 	}
+	public String toString() {
+		return "Romain [nom=" + nom + ", force=" + force + "]";
+	}
+	public static void main(String[] args) {
+		Romain minus = new Romain ("Minus",  8) ;
+		System.out.println(minus.nom);
+		System.out.println(minus);
+		System.out.println(minus.prendreParole());
+	}
 }

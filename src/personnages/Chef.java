@@ -10,7 +10,7 @@ public class Chef {
 		this.force = force;
 		this.effetPotion = effetPotion;
 		this.village = village;
-}
+	}
 	public String getNom() {
 		return nom;
 	}
