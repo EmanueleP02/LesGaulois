@@ -22,7 +22,16 @@ public class Village {
 	public Gaulois trouverHabitant(int number) {
 		return villageois[number];
 	}
+	public void afficherVillageois() {
+		System.out.println("Dans le village du chef "+ chef.getNom() + " vivent les légendaires gaulois :");
+		for (i = 0; i < villageois)
+	}
 	public static void main(String[] args) {
 		Village village = new Village ("Village des Irréductibles",  30) ;
+		Chef abraracourcix = new Chef ("Abraracourcix", 6, village) ;
+		village.setChef(abraracourcix);
+		Gaulois asterix = new Gaulois ("Astérix", 8);
+		village.ajouterHabitant(asterix);
+		
 	}
 } 

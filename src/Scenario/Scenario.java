@@ -1,5 +1,4 @@
 package Scenario;
-
 import personnages.Druide;
 import personnages.Gaulois;
 import personnages.Romain;
