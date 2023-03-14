@@ -22,4 +22,7 @@ public class Village {
 	public Gaulois trouverHabitant(int number) {
 		return villageois[number];
 	}
+	public static void main(String[] args) {
+		Village village = new Village ("Village des Irréductibles",  30) ;
+	}
 } 
