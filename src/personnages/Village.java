@@ -23,15 +23,19 @@ public class Village {
 		return villageois[number];
 	}
 	public void afficherVillageois() {
-		System.out.println("Dans le village du chef "+ chef.getNom() + " vivent les légendaires gaulois :");
-		for (i = 0; i < villageois)
+		System.out.println("Dans le village du chef "+chef.getNom() + " vivent les lï¿½gendaires gaulois :");
+		for (int i = 0; i < nbVillageois; i++) {
+	        System.out.println(villageois[i].getNom());
+	    }
 	}
 	public static void main(String[] args) {
-		Village village = new Village ("Village des Irréductibles",  30) ;
+		Village village = new Village ("Village des Irrï¿½ductibles",  30) ;
 		Chef abraracourcix = new Chef ("Abraracourcix", 6, village) ;
 		village.setChef(abraracourcix);
-		Gaulois asterix = new Gaulois ("Astérix", 8);
+		Gaulois asterix = new Gaulois ("Astï¿½rix", 8);
 		village.ajouterHabitant(asterix);
-		
+		Gaulois obelix = new Gaulois ("ObÃ©lix", 25);
+		village.ajouterHabitant(obelix);
+		village.afficherVillageois();
 	}
 } 

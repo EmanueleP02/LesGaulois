@@ -7,13 +7,13 @@ public class Scenario {
 
 	public static void main(String[] args) {
 		Druide panoramix = new Druide ("Panoramix", 5, 10);
-		Gaulois asterix = new Gaulois ("Astérix",  8) ;
-		Gaulois obelix = new Gaulois ("Obélix",  10) ;
+		Gaulois asterix = new Gaulois ("Astï¿½rix",  8) ;
+		Gaulois obelix = new Gaulois ("Obï¿½lix",  10) ;
 		Romain minus = new Romain ("Minus",  6) ;
-		panoramix.parler("Je vais aller préparer une petite potion...");
+		panoramix.parler("Je vais aller prï¿½parer une petite potion...");
 		panoramix.preparerPotion();
 		panoramix.booster(obelix);
-		obelix.parler("Par Bélénos, ce n'est pas juste !");
+		obelix.parler("Par Bï¿½lï¿½nos, ce n'est pas juste !");
 		panoramix.booster(asterix);
 		asterix.parler("Bonjour");
 		minus.parler("UN GAU... UN GAUGAU...");
